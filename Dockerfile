@@ -1,6 +1,6 @@
-FROM centos:centos7
+FROM ubuntu:14.04
 
 MAINTAINER Lewis Liu
 
-RUN yum -y update; yum clean all
-RUN yum -y install nodejs npm; yum clean all
+RUN apt-get update; apt-get clean
+RUN apt-get -y install nodejs npm; apt-get clean
