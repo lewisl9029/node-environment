@@ -15,5 +15,4 @@ RUN apt-get update \
 
 RUN npm install -g \
   npm@2.1.14 \
-  n@1.2.1 \
   && npm cache clean
