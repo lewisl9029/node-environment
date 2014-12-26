@@ -12,7 +12,7 @@ RUN apt-get update \
   && apt-get -y install \
     nodejs=0.10.34-1nodesource1~trusty1 \
   && apt-get clean \
-  && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+  && rm -rf /tmp/* /var/tmp/*
 
 RUN npm install -g \
   npm@2.1.14 \
