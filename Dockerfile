@@ -14,8 +14,6 @@ RUN apt-get update \
   && rm -rf /tmp/* /var/tmp/*
 
 RUN npm install -g \
-  npm@2.1.14 \
-  && npm install -g \
-    n@1.2.1 \
+  n@1.2.9 \
   && npm cache clean \
   && n 0.10.35
